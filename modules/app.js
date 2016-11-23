@@ -2,21 +2,37 @@ var mainApp = angular.module("mainApp", ['ngRoute']);
 mainApp.config(['$routeProvider', function($routeProvider) {
    $routeProvider.
 
-   when('/home', {
-      templateUrl: 'home.html'
+   when('/', {
+      templateUrl: '/templates/home.html'
    }).
 
-   when('/addStudent', {
-      templateUrl: 'addStudent.htm',
+   when('/account', {
+      templateUrl: '/templates/account.html'
 
    }).
 
-   when('/viewStudents', {
-      templateUrl: 'viewStudents.htm',
+   when('/checkout', {
+      templateUrl: '/templates/checkout.html'
 
+   }).
+
+   when('/contact' , {
+      templateUrl: '/templates/contact.html'
+   }).
+
+   when('/login' , {
+      templateUrl: '/templates/login.html'
+   }).
+
+   when('/products' , {
+      templateUrl: '/templates/products.html'
+   }).
+
+   when('/single' , {
+      templateUrl: '/templates/single.html'
    }).
 
    otherwise({
-      redirectTo: '/home'
+      redirectTo: '/'
    });
 }]);
