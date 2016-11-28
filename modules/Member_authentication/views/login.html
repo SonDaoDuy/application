@@ -1,0 +1,59 @@
+<!--contact-->
+<div class="content">
+    <div class="main-1">
+        <div class="container">
+            <div class="login-page">
+                <div class="account_grid">
+                    <div class="col-md-6 login-left">
+                        <h3>NEW CUSTOMERS</h3>
+                        <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+                        <a class="acount-btn" href="#account">Create an Account</a>
+                    </div>
+                    <div class="col-md-6 login-right">
+                        <h3>REGISTERED CUSTOMERS</h3>
+                        <p>If you have an account with us, please log in.</p>
+                        <div ng-show="error" class="alert alert-danger">{{error}}</div>
+                        <form name="form" ng-submit="login()" role="form">
+                            <div >
+                                <!-- <span>Email Address<label>*</label></span>
+                                <input type="text" name="username" id="username" class="form-control" ng-model="vm.username" required /> -->
+                                <label for="username">Email Address:</label>
+                                
+                                <input type="text" name="username" id="username" class="form-control" ng-model="username" required />
+                                <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+                            </div>
+                            <div>
+                                <!-- <span>Password<label>*</label></span>
+                                <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required /> -->
+                                <label for="password">Password</label>
+                                
+                                <input type="password" name="password" id="password" class="form-control" ng-model="password" required />
+                                <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+                            </div>
+                            <a class="forgot" href="#">Forgot Your Password?</a>
+                            <input type="submit" value="Login" ng-disabled="form.$invalid || dataLoading">
+                            <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>
+                        </form>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- login -->
+<div class="subscribe">
+    <div class="container">
+        <div class="subscribe1">
+            <h4>the latest from swim wear</h4>
+        </div>
+        <div class="subscribe2">
+            <form>
+                <input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+                <input type="submit" value="JOIN">
+            </form>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</div>

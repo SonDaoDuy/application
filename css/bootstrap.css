@@ -334,10 +334,15 @@ img {
 .img-circle {
   border-radius: 50%;
 }
+
+.link-text{
+  color: #dce1e6;
+}
+
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 0;
+  border: 0.5;
   border-top: 1px solid none;
 }
 .sr-only {
